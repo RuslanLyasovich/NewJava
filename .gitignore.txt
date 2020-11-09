@@ -1,4 +1,4 @@
-# Игнор-лист
+# Игнор-лист для папки темп
 
 /temp/*
 !/JavaClassesMainTask/src
