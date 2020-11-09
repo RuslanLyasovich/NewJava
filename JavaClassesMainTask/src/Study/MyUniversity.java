@@ -28,11 +28,12 @@ public class MyUniversity {
         mgu.addStudentToUniversityList(new Student(9, "Ольга", "Олеговна", "Чернявская", 2003, "Орша", "67834", "Юридический", "1", "06Пр"));
         mgu.addStudentToUniversityList(new Student(10, "Наталья", "Антоновна", "Стома", 1996, "Новополоцк", "98345", "Строительный", "2", "05Ст"));
         mgu.addStudentToUniversityList(new Student(11, "Карина", "Михайловна", "Пушистая", 2001, "Минск", "89221", "Юридический", "3", "04Пр"));
+        mgu.addStudentToUniversityList(new Student(12, "Алеся", "Михайловна", "Лясович", 1982, "Новополоцк", "34567", "Строительный", "1", "06Ст"));
 
 
         mgu.selectionToFaculty("Строительный");//список студентов заданного факультета
-        mgu.selectionToFacultyAndToCourse("Юридический", "1");//списки студентов для каждого факультета и курса;
-        mgu.selectionToYard(1998);//список студентов, родившихся после заданного года;
+        mgu.selectionToFacultyAndToCourse("Строительный", "3");//списки студентов для каждого факультета и курса;
+        mgu.selectionToYard(1982);//список студентов, родившихся после заданного года;
         mgu.selectionToGroup("05Пр");//список студентов заданной группы
 
 
