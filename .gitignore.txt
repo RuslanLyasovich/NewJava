@@ -1,0 +1,6 @@
+# Игнор-лист
+
+/temp/*
+!/JavaClassesMainTask/src
+!/JavaFundamentalMainTask/src
+!/JavaFundamentalOptionalTask/src
