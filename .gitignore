@@ -8,9 +8,12 @@
 *.log 
 
 target/
+out/
+.idea/
 .classpath
 .project
 .settings
+.iml
 
 *.DS_Store
 [Tt]humbs.db
