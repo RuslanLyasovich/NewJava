@@ -1,3 +1,5 @@
+package com.automation.java_fundamentals;
+
 import java.util.Scanner;
 
 class JavaFundamentalMainTask {

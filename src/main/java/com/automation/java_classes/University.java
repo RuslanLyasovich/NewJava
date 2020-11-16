@@ -1,4 +1,4 @@
-package src.main.java.com.automation.JavaClassesNew;
+package com.automation.java_classes;
 
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ public class University {
 
 
     private String universityName;
-    private ArrayList<src.main.java.com.automation.JavaClassesNew.Student> studentsList;
+    private ArrayList<Student> studentsList;
 
     University(String universityName) {
         this.universityName = universityName;

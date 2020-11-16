@@ -1,4 +1,4 @@
-package src.main.java.com.automation.JavaClassesNew;
+package com.automation.java_classes;
 
 /*
 Main Task
