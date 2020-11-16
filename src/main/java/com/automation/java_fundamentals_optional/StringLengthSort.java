@@ -1,4 +1,4 @@
-package JavaFundamentalOptionalTaskNew;
+package com.automation.java_fundamentals_optional;
 
 
 
