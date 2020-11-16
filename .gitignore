@@ -16,3 +16,4 @@ target/
 [Tt]humbs.db
 
 *.idea
+*.out
