@@ -1,0 +1,6 @@
+﻿carID,brand,model,fuelConsumption,velocity,maxCarryingWeight,maxPassengers,price
+1,Mercedes,Sprinter,14.4,120,1900,25,16000
+2,Hundai,Accept,8.2,160,800,4,9000
+3,BMW,3-series,7.1,190,750,4,10200
+4,LADA,Priora,9.2,140,750,4,8000
+5,Honda,Civic,7.5,192,800,5,11200
