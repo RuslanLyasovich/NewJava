@@ -11,80 +11,50 @@ import java.util.Comparator;
 
 public class CarPark {
 
-    private String CarParkName;
-    private ArrayList<Car> carList;
+    private String carParkName;
+    private ArrayList<Car> carCollection;
 
-    CarPark(String CarParkName) {
-        this.CarParkName = CarParkName;
-        this.carList = new ArrayList<>();
+    CarPark(String carParkName) {
+        this.carParkName = carParkName;
+        this.carCollection = new ArrayList<>();
     }
 
 
-    public void addCarToCarList(Car car) {
-        carList.add(car);
+    public void addCar(Car car) {
+        carCollection.add(car);
     }
 
 
-    public void calculateTheCostOfAllCars() {
+    public void calculateCostOfAllCars() {
         double poolPrice = 0.0;
-        for (Car car : carList) {
+        for (Car car : carCollection) {
             poolPrice += car.getPrice();
         }
         System.out.println("\n" + "Cost of TaxiTravel's cars: " + Math.round(poolPrice * 100) / 100.0 + "\n");
 
     }
 
-    public void selectionToFuelConsumption() {
+    public void sortToFuelConsumption() {
         System.out.println("Cars are sorted by fuel consumption :");
-        Collections.sort(carList, Comparator.comparingDouble(Car::getFuelConsumption));
-        System.out.println(carList.toString());
+        Collections.sort(carCollection, Comparator.comparingDouble(Car::getFuelConsumption));
+        System.out.println(carCollection.toString());
 
     }
 
 
-    void selectCarBySpeedRange() {
-
-        System.out.println("\n" + "Search for vehicles that match your speed criteria");
-
-        System.out.println("What should be the minimum vehicle speed? ");
-        int minVelocity = getVelocity();
+    void selectCarBySpeedRange(int minVelocity, int maxVelocity) {
 
 
-        System.out.println("What value should not exceed the maximum vehicle speed? ");
-        int maxVelocity = getVelocity();
-
-        while (maxVelocity < minVelocity) {
-            System.out.println("The value you specified is less than the minimum, \n" +
-                    "Please specify another");
-            maxVelocity = getVelocity();
-        }
-
-        System.out.println( "\n" + "Vehicles that can reach the speed range you specified:");
-        for (Car car : carList) {
+        System.out.println( "\n" + "Cars with a speed range from " + minVelocity + "to " + maxVelocity+ ":");
+        for (Car car : carCollection) {
             if (car.getVelocity() >= minVelocity && car.getVelocity() <= maxVelocity) {
                 System.out.printf("" + car);
             }
         }
     }
-    private int getVelocity() {
-            int currentVelocity;
-          {
-            while (true) {
-                try {
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-                    currentVelocity = Integer.parseInt(reader.readLine());
-                    break;
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            return currentVelocity;
-        }
-        }
 
 
-
-    }
+}
 
 
 
