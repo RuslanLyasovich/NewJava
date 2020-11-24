@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 
-public class LinesFromTheFile {
+public class LinesFromFile {
 
 
     public static void ReversLines() throws Exception {

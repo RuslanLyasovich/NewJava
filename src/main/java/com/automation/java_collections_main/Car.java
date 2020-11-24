@@ -2,16 +2,17 @@ package com.automation.java_collections_main;
 
 public class Car {
 
-        private int carID;
-        private String brand;
-        private String model;
-        private double fuelConsumption;
-        private int velocity;
-        private int maxCarryingWeight;
-        private int maxPassengers;
-        private double price;
+    protected int carID;
+    protected String brand;
+    protected String model;
+    protected double fuelConsumption;
+    protected int velocity;
+    protected int maxCarryingWeight;
+    protected int maxPassengers;
+    protected int doors;
+    protected double price;
 
-    Car (int carID, String brand, String model, double fuelConsumption, int velocity, int maxCarryingWeight, int maxPassengers, double price) {
+    Car(int carID, String brand, String model, double fuelConsumption, int velocity, int maxCarryingWeight, int maxPassengers, int doors, double price) {
         this.carID = carID;
         this.brand = brand;
         this.model = model;
@@ -19,9 +20,9 @@ public class Car {
         this.velocity = velocity;
         this.maxCarryingWeight = maxCarryingWeight;
         this.maxPassengers = maxPassengers;
+        this.doors = doors;
         this.price = price;
     }
-
 
     public int getCarID() {
         return carID;
@@ -51,13 +52,17 @@ public class Car {
         return maxPassengers;
     }
 
+    public int getDoors() {
+        return doors;
+    }
+
     public double getPrice() {
         return price;
     }
 
     @Override
     public String toString() {
-        return  "\n" +
+        return "\n" +
                 "carID : " + carID +
                 ", brand : " + brand + "" +
                 ", model : " + model + "" +
@@ -65,8 +70,8 @@ public class Car {
                 ", velocity : " + velocity + "" +
                 ", maxCarryingWeight : " + maxCarryingWeight + "" +
                 ", maxPassengers : " + maxPassengers + "" +
+                ", doors : " + doors + "" + "" +
                 ", price : " + price + "" + "\n";
     }
 }
-
 

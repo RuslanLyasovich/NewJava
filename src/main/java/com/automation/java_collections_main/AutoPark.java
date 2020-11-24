@@ -1,6 +1,8 @@
 package com.automation.java_collections_main;
 
 
+
+
 // Задание. Создать консольное приложение, удовлетворяющее следующим требованиям:
 // Каждый класс должен иметь отражающее смысл название и информативный состав.
 // Использовать возможности ООП: классы, наследование, полиморфизм, инкапсуляция.
@@ -18,31 +20,25 @@ package com.automation.java_collections_main;
 // Провести сортировку автомобилей парка по расходу топлива.
 // Найти автомобиль в компании, соответствующий заданному диапазону параметров скорости.
 
-public class Autopark {
+public class AutoPark {
 
     public static void main(String[] args) {
 
 
-
-
         CarPark taxiTravel = new CarPark("TaxiTravel"); // Создать таксопарк.
 
-        taxiTravel.addCar(new Car(1, "Mercedes", "Sprinter", 14.4, 120, 1900, 25, 16000));
-        taxiTravel.addCar(new Car(2, "Hundai", "Accept", 8.2, 160, 800, 4, 9000));
-        taxiTravel.addCar(new Car(3, "BMW", "3-series", 7.1, 190, 750, 4, 10200));
-        taxiTravel.addCar(new Car(4, "LADA", "Priora", 9.2, 140, 750, 4, 8000));
-        taxiTravel.addCar(new Car(5, "Honda", "Civic", 7.5, 192, 800, 5, 11200));
-        taxiTravel.addCar(new Car(6, "Audi", "A6", 8, 170, 810, 5, 7900.10));
-        taxiTravel.addCar(new Car(7, "Ferrari", "California T", 10.5, 316, 987, 2, 295000));
+        taxiTravel.addCar(new Car(1, "Mercedes", "Sprinter", 14.4, 120, 1900, 25, 3,16_000));
+        taxiTravel.addCar(new Car(2, "Hundai", "Accept", 8.2, 160, 800, 4, 4,9_000));
+        taxiTravel.addCar(new Car(3, "BMW", "3-series", 7.1, 190, 750, 4, 4,10_200));
+        taxiTravel.addCar(new Car(4, "LADA", "Priora", 9.2, 140, 750, 4, 4,8_000));
+        taxiTravel.addCar(new Car(5, "Honda", "Civic", 7.5, 192, 800, 5, 4, 11_200));
+        taxiTravel.addCar(new Car(6, "Audi", "A6", 8, 170, 810, 5, 4,7_900.10));
+        taxiTravel.addCar(new SportCar(7, "Ferrari", "California T", 10.5, 316, 987, 2, 2,295_000, true));
+        taxiTravel.addCar(new RacingCar(8, "Ferrari", "F2001", 18, 355, 750, 1, 1,7_500_000.18, true, true));
 
 
         taxiTravel.calculateCostOfAllCars(); // Подсчитать стоимость автопарка.
         taxiTravel.sortToFuelConsumption(); // Провести сортировку автомобилей парка по расходу топлива.
         taxiTravel.selectCarBySpeedRange(100, 150); // Найти автомобиль в компании, соответствующий заданному диапазону параметров скорости.
-                                            // Определить иерархию легковых автомобилей.
-
-
     }
 }
-
-
